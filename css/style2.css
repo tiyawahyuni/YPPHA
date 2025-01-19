@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color:  #007BFF; /* Latar Belakang Halaman (Biru Laut) */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #FFFFFF; /* Teks Umum (Putih) */
+}
+
+.box {
+  position: relative;
+  width: 400px;
+  padding: 40px;
+  background-color: #FFFFFF; /* Latar Belakang Form (Putih) */
+  box-sizing: border-box;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.box .logo {
+  width: 100px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.box h2 {
+  margin: 0;
+  padding: 0;
+  color: #333333; /* Teks di Dalam Form (Abu-abu Gelap) */
+  margin-bottom: 30px; /* Tambahkan margin bawah untuk memberi jarak antara h2 dan label */
+}
+
+.box .inputbox {
+  position: relative;
+  margin-bottom: 15px; /* Tambahkan margin bawah untuk memberi jarak antar inputbox */
+}
+
+.box .inputbox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333333; /* Teks di Dalam Form (Abu-abu Gelap) */
+  letter-spacing: 1px;
+  margin-bottom: 10px; /* Tambahkan margin bawah untuk memberi jarak antara input dan label */
+  border: none;
+  border-bottom: 1px solid #333333; /* Border Bawah Input (Abu-abu Gelap) */
+  outline: none;
+  background: transparent;
+}
+
+.box .inputbox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333333; /* Teks di Dalam Form (Abu-abu Gelap) */
+  letter-spacing: 1px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label {
+  top: -18px;
+  left: 0;
+  color: #007BFF; /* Biru Laut */
+  font-size: 12px;
+}
+
+.box input[type='submit'] {
+  background-color: #0056B3; /* Tombol Login (Biru Tua) */
+  border: none;
+  outline: none;
+  color: #FFFFFF; /* Teks Tombol (Putih) */
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px; /* Tambahkan margin atas untuk memberi jarak antara input terakhir dan tombol submit */
+}
+
+.box input[type='submit']:hover {
+  background-color: #004494; /* Tombol Login Saat Hover (Biru Tua Lebih Gelap) */
+}
